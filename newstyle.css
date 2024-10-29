@@ -1,0 +1,113 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Using the imported Roboto font */
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    background-color: #4eCDC4; /* Changed to a teal color */
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+}
+
+/* Choice Styles */
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31; /* Dark background on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Image Styles */
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Choices Container */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+/* Score Board Styles */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+/* Score Styles */
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    color: #4eCDC4; /* Teal color for scores */
+}
+
+/* Message Container Styles */
+.msg-container {
+    margin-top: 5rem;
+}
+
+/* Message Styles */
+#msg {
+    background-color: #4eCDC4; /* Changed to teal */
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    /* Adjusting styles for smaller screens */
+    h1 {
+        font-size: 2rem; /* Smaller font size */
+        height: auto;
+        line-height: 2rem;
+    }
+    
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 110px;
+        width: 110px;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 3rem; /* Smaller score font size */
+    }
+
+    #msg {
+        font-size: 1.5rem; /* Smaller message font size */
+    }
+}
